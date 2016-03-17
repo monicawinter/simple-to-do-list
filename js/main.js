@@ -7,6 +7,7 @@ $('form').on('submit', function (e) {
   e.preventDefault();
   $li.html($input.val());
   $list.append($li);
+  $input.val('');
 });
 
 $('ul').on('click', 'li', function (e) {
